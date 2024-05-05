@@ -1,0 +1,11 @@
+<ParameterScan version="3.7.0">
+   <OutputDirectory>SumTemp66_Longest</OutputDirectory>
+   <ParameterList Resource="Simulation/ELUGMSteppables.py">
+      <Parameter CurrentIteration="0" Name="BETAONE" Type="PYTHON_GLOBAL" ValueType="int">
+         <Values>6000</Values>
+      </Parameter>
+      <Parameter CurrentIteration="0" Name="BETATWO" Type="PYTHON_GLOBAL" ValueType="int">
+         <Values>6000,6000,6000</Values>
+      </Parameter>
+   </ParameterList>
+</ParameterScan>

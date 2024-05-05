@@ -1,0 +1,94 @@
+<CompuCell3D Revision="20171208" Version="3.7.7">
+   <Potts>
+      <Dimensions x="100" y="100" z="100"/>
+      <Steps>2000000</Steps>
+      <Flip2DimRatio>1</Flip2DimRatio> 	  
+      <RandomSeed>44691</RandomSeed>
+      <NeighborOrder>3</NeighborOrder>
+   </Potts>
+   <Plugin Name="CellType">    
+      <CellType TypeId="0" TypeName="Medium"/>
+      <CellType TypeId="1" TypeName="Y"/>
+      <CellType TypeId="2" TypeName="G"/>
+      <CellType TypeId="3" TypeName="B"/>
+      <CellType TypeId="4" TypeName="R"/>
+      <CellType TypeId="5" TypeName="O"/>
+      <CellType TypeId="6" TypeName="W"/>
+      <CellType TypeId="7" TypeName="L"/>
+      <CellType TypeId="8" TypeName="K"/>
+   </Plugin>
+   <Plugin Name="Volume"/>
+   <Plugin Name="Surface"/>
+   <Plugin Name="CenterOfMass"/>
+   <Plugin Name="NeighborTracker"/>
+   <Plugin Name="PixelTracker"/>
+   <Plugin Name="ConnectivityGlobal">
+       <FastAlgorithm/>
+       <ConnectivityOn Type="Y"/>
+       <ConnectivityOn Type="G"/>
+       <ConnectivityOn Type="B"/>
+       <ConnectivityOn Type="R"/>
+       <ConnectivityOn Type="O"/>
+       <ConnectivityOn Type="W"/>
+       <ConnectivityOn Type="L"/>
+       <ConnectivityOn Type="K"/>       
+   </Plugin>
+   <Plugin Name="Contact">
+      <Energy Type1="Medium" Type2="Medium">0</Energy>
+      <Energy Type1="Medium" Type2="Y">26.0</Energy>
+      <Energy Type1="Medium" Type2="G">26.0</Energy>
+      <Energy Type1="Medium" Type2="B">26.0</Energy>
+      <Energy Type1="Medium" Type2="R">26.0</Energy>      
+      <Energy Type1="Y" Type2="Y">47.0</Energy>    
+      <Energy Type1="Y" Type2="G">47.0</Energy>    
+      <Energy Type1="Y" Type2="B">42.0</Energy>
+      <Energy Type1="Y" Type2="R">49.0</Energy>      
+      <Energy Type1="G" Type2="G">47.0</Energy>
+      <Energy Type1="G" Type2="B">42.0</Energy>     
+      <Energy Type1="G" Type2="R">49.0</Energy>
+      <Energy Type1="B" Type2="B">25.0</Energy>      
+      <Energy Type1="B" Type2="R">49.0</Energy>
+      <Energy Type1="R" Type2="R">49.0</Energy>
+      <Energy Type1="O" Type2="Medium">26.0</Energy>     
+      <Energy Type1="O" Type2="Y">49.0</Energy>
+      <Energy Type1="O" Type2="G">49.0</Energy>
+      <Energy Type1="O" Type2="B">49.0</Energy>
+      <Energy Type1="O" Type2="R">49.0</Energy>
+      <Energy Type1="O" Type2="O">49.0</Energy>
+      <Energy Type1="W" Type2="Medium">26.0</Energy>     
+      <Energy Type1="W" Type2="Y">42.0</Energy>
+      <Energy Type1="W" Type2="G">42.0</Energy>
+      <Energy Type1="W" Type2="B">25.0</Energy>
+      <Energy Type1="W" Type2="R">49.0</Energy>
+      <Energy Type1="W" Type2="O">49.0</Energy>
+      <Energy Type1="W" Type2="W">25.0</Energy>
+      <Energy Type1="L" Type2="Medium">26.0</Energy>     
+      <Energy Type1="L" Type2="Y">49.0</Energy>
+      <Energy Type1="L" Type2="G">49.0</Energy>
+      <Energy Type1="L" Type2="B">49.0</Energy>
+      <Energy Type1="L" Type2="R">49.0</Energy>
+      <Energy Type1="L" Type2="O">49.0</Energy>
+      <Energy Type1="L" Type2="W">49.0</Energy>
+      <Energy Type1="L" Type2="L">49.0</Energy>
+      <Energy Type1="K" Type2="Medium">26.0</Energy>     
+      <Energy Type1="K" Type2="Y">49.0</Energy>
+      <Energy Type1="K" Type2="G">49.0</Energy>
+      <Energy Type1="K" Type2="B">49.0</Energy>
+      <Energy Type1="K" Type2="R">49.0</Energy>
+      <Energy Type1="K" Type2="O">49.0</Energy>
+      <Energy Type1="K" Type2="W">49.0</Energy>
+      <Energy Type1="K" Type2="L">49.0</Energy>
+      <Energy Type1="K" Type2="K">49.0</Energy>
+      <NeighborOrder>4</NeighborOrder>
+   </Plugin>
+   <Steppable Type="BlobInitializer">
+      <Region>
+         <Center x="50" y="50" z="50"/>
+         <Radius>15</Radius>
+         <Gap>0</Gap>
+         <Width>5</Width>
+         <Types>G</Types>
+      </Region>
+</Steppable>  
+</CompuCell3D>
+

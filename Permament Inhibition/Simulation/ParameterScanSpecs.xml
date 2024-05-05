@@ -1,0 +1,11 @@
+<ParameterScan version="3.7.0">
+   <OutputDirectory>LING6000_ParameterScan</OutputDirectory>
+   <ParameterList Resource="Simulation/ELUGMSteppables.py">
+      <Parameter CurrentIteration="0" Name="BETAONE" Type="PYTHON_GLOBAL" ValueType="int">
+         <Values>6000</Values>
+      </Parameter>
+      <Parameter CurrentIteration="4" Name="BETATWO" Type="PYTHON_GLOBAL" ValueType="int">
+         <Values>1000,1000,1000,6000,6000,6000,11000,11000,11000,16000,16000,16000,21000,21000,21000</Values>
+      </Parameter>
+   </ParameterList>
+</ParameterScan>
