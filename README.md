@@ -1,6 +1,6 @@
 # Inhibitory-Circuits-for-SynDev
 
-This github contains sample codes for the following manuscript: TBA
+This github contains sample codes for the following manuscript: https://doi.org/10.1021/acssynbio.4c00230
 
 This code runs on CompuCell3D v3.7.8 which can be found at the organization's website, along with instructions. Instructions can also be found at the page for the original model: https://github.com/lmorsut/Lam_Morsut_GJSM
 
