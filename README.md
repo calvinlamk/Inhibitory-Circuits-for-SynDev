@@ -11,14 +11,21 @@ However, the contrast ended up being poor so I recolored with the final chosen c
 I give the recoloring key below.
 
 Please ignore any mention of fluroscent proteins (i.e. GFP, RFP, BFP, etc) in the code.
+
 cell type=1=Y is gray
+
 cell type=2=G is blue
+
 cell type=3=B is red
+
 cell type=6=R is cyan
 
 cell.dict["PTS"][0]= not GFP as stated in the code but blue color
+
 cell.dict["PTS"][1]= non specified color for activating amplifer
+
 cell.dict["PTS"][2]= not BFP as stated in the code but red color
+
 cell.dict["PTS"][3]= unused color
 
 Again, I apologize for the confusion. Please feel free to recolor as desired.
